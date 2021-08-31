@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--bck-color);
+ 
+}
+
+:root{
+    --header-footer-color: #ffa69e;
+    --bck-color: #faf3dd;
+    --txt-color: #293241;
+    --btn-color: orange;
+}
+
+
+/* container */
+
+.container{
+    display: block;
+    margin-left: 10%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    min-height: 80vh;
+
+}
+
+
+/* -------- Fun with triangles ------ */
+.heading{
+    color: var(--txt-color);
+    margin-top: 60px;
+    font-size: 3rem;
+}
+
+
+#initial-price{
+    display: block;
+    margin-top: 70px;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    border: 0.1px solid grey;
+    width: 20%;
+}
+
+#no-of-stocks{
+    display: block;
+    margin-top: 30px;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    border: 0.1px solid grey;
+    width: 20%;
+}
+
+#current-price{
+    display: block;
+    margin-top: 30px;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    border: 0.1px solid grey;
+    width: 20%;
+}
+
+
+#check-btn{
+    display: block;
+    margin-top: 50px;
+    padding: 15px 22px;
+    border-radius: 2rem;
+    border: none;
+    background-color: var(--btn-color); 
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+/* -------- Output ------ */
+
+#result{
+    display:block;
+    text-align: center;
+    margin-top: 100px;
+    color: var(--txt-color);
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 50px;
+}
+
+
+
+
+/* ------- Footer -------- */
+
+.footer{
+    background-color: var(--header-footer-color);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+
+.icon{
+    margin-top: 25px;
+    height: 30px;
+    width: 30px;
+} 
+
+
+.non-bullet-list{
+    list-style: none;    
+}
+
+.icon-list-inline{
+    display: inline;
+    padding: 0rem 2rem;
+}
+
+
+/* ------- Processing -------- */
+.processing-cont{
+    display:block;
+    text-align: center;
+    margin-top: 100px;
+    color: var(--txt-color);
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
