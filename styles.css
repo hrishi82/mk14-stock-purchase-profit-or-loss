@@ -20,7 +20,8 @@ body{
 
 .container{
     display: block;
-    margin-left: 10%;
+    max-width: 600px;
+    margin:auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     min-height: 80vh;
@@ -38,36 +39,40 @@ body{
 
 #initial-price{
     display: block;
+    margin: auto;
     margin-top: 70px;
     padding: 1rem;
     border-radius: 1.5rem;
     border: 0.1px solid grey;
-    width: 20%;
+    width: 40%;
 }
 
 #no-of-stocks{
     display: block;
+    margin: auto;
     margin-top: 30px;
     padding: 1rem;
     border-radius: 1.5rem;
     border: 0.1px solid grey;
-    width: 20%;
+    width: 40%;
 }
 
 #current-price{
     display: block;
+    margin: auto;
     margin-top: 30px;
     padding: 1rem;
     border-radius: 1.5rem;
     border: 0.1px solid grey;
-    width: 20%;
+    width: 40%;
 }
 
 
 #check-btn{
     display: block;
+    margin: auto;
     margin-top: 50px;
-    padding: 15px 22px;
+    padding: 15px 26px;
     border-radius: 2rem;
     border: none;
     background-color: var(--btn-color); 
