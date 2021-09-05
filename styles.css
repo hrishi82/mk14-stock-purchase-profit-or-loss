@@ -83,6 +83,7 @@ body{
 }
 
 
+
 #check-btn:hover{
     background-color: var(--btn-transition);
     cursor: pointer;
@@ -100,6 +101,8 @@ body{
     font-weight: bold;
     font-size: 1.8rem;
     margin-bottom: 50px;
+    
+  
 }
 
 
@@ -141,4 +144,30 @@ body{
     font-weight: bold;
     font-size: 1.4rem;
     margin-bottom: 30px;
+}
+
+
+
+/* ------- Typewriter Animation para -------- */
+.typing {
+    position: relative;
+}
+
+.typing::after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    border-right: 2px solid black;
+    animation: blink 0.5s infinite ease;
+
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }

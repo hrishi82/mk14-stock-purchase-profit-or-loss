@@ -4,6 +4,44 @@ var currentPrice = document.querySelector('#current-price');
 var checkBtn = document.querySelector('#check-btn');
 var result = document.querySelector('#result');
 
+
+const typeText = ['Profit or Loss Calculator']
+let count = 0;
+let index = 0;
+let currentText = '';
+let letter = '';
+
+//Self Invoked function 
+// ( function x(){} () );
+
+(function typeWriterFn(){
+
+    //when reaching the last index, reset index to 0
+    if(count === typeText.length){
+      count = 0;
+    }
+
+    // access the current text using the index value
+    currentText = typeText[count];
+
+    //this line gives us one letter at a time for the current word selected 
+    letter = currentText.slice(0, ++index);
+
+    // adding each letter to the HTML .typing class
+    document.querySelector(".typing").textContent = letter;
+
+    if(letter.length === currentText.length){
+      count++;
+      index = 0;
+    }
+
+    setTimeout(typeWriterFn, 400);
+
+}());
+
+
+
+
 function clickHandler(){
     var ip = Number(initialPrice.value);
     var noOfSt = Number(noOfStocks.value);
@@ -38,7 +76,7 @@ function profitorloss(ip, noOfSt, cp){
           `Hey, the profit is ${profit} and the profit percentage is ${pp}%`, 'green'
         );
       } else {
-        showOutput(`No profit or loss`);
+        showOutput(`No profit or loss`, "black");
       }
     }
 
