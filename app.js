@@ -5,6 +5,9 @@ var checkBtn = document.querySelector('#check-btn');
 var result = document.querySelector('#result');
 
 
+
+//////////////////// Typewriter function ///////////////////////////
+
 const typeText = ['Profit or Loss Calculator']
 let count = 0;
 let index = 0;
@@ -35,11 +38,16 @@ let letter = '';
       index = 0;
     }
 
-    setTimeout(typeWriterFn, 400);
+    setTimeout(typeWriterFn, 200);
 
 }());
 
+//////////////////////////////////////////////////////////////////////
 
+
+
+
+////////////////////////// Main function //////////////////////////////
 
 
 function clickHandler(){
@@ -50,10 +58,17 @@ function clickHandler(){
     console.log(noOfStocks.value)
 
     if (initialPrice.value === '' || noOfStocks.value === '' || currentPrice.value === ''){
-      showOutput(`Please enter values in all the fields`);
+      showOutput(`Please enter values in all the fields`, "balck");
     }else{
-      profitorloss(ip, noOfSt, cp);
+      if(initialPrice.value < 0 || noOfStocks.value < 0 || currentPrice.value < 0){
+        showOutput(`Please enter correct values`, "black");
+      }else{
+        profitorloss(ip, noOfSt, cp);
+      }
+      
     }
+
+
 
 }
 
