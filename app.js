@@ -60,7 +60,7 @@ function clickHandler(){
     if (initialPrice.value === '' || noOfStocks.value === '' || currentPrice.value === ''){
       showOutput(`Please enter values in all the fields`, "balck");
     }else{
-      if(initialPrice.value < 0 || noOfStocks.value < 0 || currentPrice.value < 0){
+      if(initialPrice.value < 0.01 || noOfStocks.value < 0 || currentPrice.value < 0){
         showOutput(`Please enter correct values`, "black");
       }else{
         profitorloss(ip, noOfSt, cp);
